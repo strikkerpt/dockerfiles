@@ -4,7 +4,6 @@ FROM debian:jessie-20181011
 # Install node
 #
 RUN apt-get update
-RUN apt-get -y install sudo
 RUN apt-get -y install apt-transport-https curl
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
