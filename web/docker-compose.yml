@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+      - '8080:8080'
+    volumes:
+      - /Users/sinesiocouceiro/Projects/test2:/var/www/project
+    command: tail -f /dev/null
